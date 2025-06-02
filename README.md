@@ -7,7 +7,7 @@ and allows for efficient test-time scaling of LLM reasoning models.
 
 ## Installation
 To run the code, you need to install the `requirements.txt`.
-Our models are implemented with vLLM using Red Hat's [RewardHub](https://github.com/Red-Hat-AI-Innovation-Team/reward_hub).
+Our models are implemented with vLLM using Red Hat AI Innovation Team's [RewardHub](https://github.com/Red-Hat-AI-Innovation-Team/reward_hub).
 Since we made slight changes to their implementation, the updated RewardHub implementation is included in this repo.
 Simply run
 
@@ -28,7 +28,7 @@ Then, you can run the `main.py` file
 by running the SLURM file `spec.slurm`. This will start a job with 3 GPUs. Change the job file accordingly with your credentials.
 
 ## Credits
-We would like to thank Red Hat for their [RewardHub](https://github.com/Red-Hat-AI-Innovation-Team/reward_hub) repository, and
+We would like to thank Red Hat AI Innovation Team for their [RewardHub](https://github.com/Red-Hat-AI-Innovation-Team/reward_hub) repository, and
 OpenAI for their [PRM800k](https://github.com/openai/prm800k) repository, from which we are using the grading function for grading
 correctness of LLM-generated answers.
 
