@@ -1,7 +1,7 @@
-# Guided Speculative Inference for Efficient Test-Time Reasoning of LLMs
+# Guided Speculative Inference for Efficient Test-Time Alignment of LLMs
 
 This is the code repository implementing _Guided Speculative Inference_ (GSI) from the paper
-"Guided Speculative Inference for Efficient Test-Time Reasoning of LLMs" (J. Geuter, Y. Mroueh, D. Alvarez-Melis, 2025).
+"Guided Speculative Inference for Efficient Test-Time Alignment of LLMs" (J. Geuter, Y. Mroueh, D. Alvarez-Melis, 2025).
 GSI is an inference-time algorithm for LLMs which combines soft best-of-n sampling with speculative sampling from a small model,
 and allows for efficient test-time scaling of LLM reasoning models.
 
@@ -23,9 +23,8 @@ to install RewardHub.
 
 You can launch a SLURM job by running `job.slurm`. This launches `main.py` which evaluates GSI on the datasets specified in the job file.
 Make sure to replace all relevant parameters in `job.slurm`.
-
 Then, you can run the `main.py` file
-by running the SLURM file `spec.slurm`. This will start a job with 3 GPUs. Change the job file accordingly with your credentials.
+by running the SLURM file `job.slurm`. This will start a job with 3 GPUs. Change the job file accordingly with your credentials.
 
 ## Credits
 We would like to thank Red Hat AI Innovation Team for their [RewardHub](https://github.com/Red-Hat-AI-Innovation-Team/reward_hub) repository, and
