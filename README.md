@@ -1,7 +1,7 @@
 # Guided Speculative Inference for Efficient Test-Time Alignment of LLMs
 
 This is the code repository implementing _Guided Speculative Inference_ (GSI) from the paper
-"Guided Speculative Inference for Efficient Test-Time Alignment of LLMs" (J. Geuter, Y. Mroueh, D. Alvarez-Melis, 2025).
+[Guided Speculative Inference for Efficient Test-Time Alignment of LLMs](https://arxiv.org/abs/2506.04118) (J. Geuter, Y. Mroueh, D. Alvarez-Melis, 2025).
 GSI is an inference-time algorithm for LLMs which combines soft best-of-n sampling with speculative sampling from a small model,
 and allows for efficient test-time scaling of LLM reasoning models.
 
@@ -33,3 +33,14 @@ correctness of LLM-generated answers.
 
 ## Citation
 If you find this repository helpful, please consider citing our paper.
+```
+@misc{geuter2025guidedspeculativeinferenceefficient,
+      title={Guided Speculative Inference for Efficient Test-Time Alignment of LLMs}, 
+      author={Jonathan Geuter and Youssef Mroueh and David Alvarez-Melis},
+      year={2025},
+      eprint={2506.04118},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2506.04118}, 
+}
+```
