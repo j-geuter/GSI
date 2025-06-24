@@ -20,7 +20,6 @@ srun python /dir/to/main.py \
     --array_id=$SLURM_ARRAY_JOB_ID \
     --datasets=HuggingFaceH4/MATH-500,Hothan/OlympiadBench,minerva \
     --runs_per_dataset=1 \
-    --reward_hub_prm \
     --prm_model_path=Qwen/Qwen2.5-Math-PRM-7B \
     --max_samples=500 \
     --max_new_tokens=512 \
