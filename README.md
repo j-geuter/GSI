@@ -35,13 +35,12 @@ correctness of LLM-generated answers.
 ## Citation
 If you find this repository helpful, please consider citing our paper.
 ```
-@misc{geuter2025guidedspeculativeinferenceefficient,
-      title={Guided Speculative Inference for Efficient Test-Time Alignment of LLMs}, 
-      author={Jonathan Geuter and Youssef Mroueh and David Alvarez-Melis},
-      year={2025},
-      eprint={2506.04118},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2506.04118}, 
+@inproceedings{
+geuter2025guided,
+title={Guided Speculative Inference for Efficient Test-Time Alignment of {LLM}s},
+author={Jonathan Geuter and Youssef Mroueh and David Alvarez-Melis},
+booktitle={ES-FoMo III: 3rd Workshop on Efficient Systems for Foundation Models},
+year={2025},
+url={https://openreview.net/forum?id=cRTWN5iwiy}
 }
 ```
