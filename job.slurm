@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --nodes=1           
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=24
+#SBATCH --cpus-per-gpu=24
 #SBATCH --gres=gpu:3
 #SBATCH --mem=360G
 #SBATCH --array=1-3%3
