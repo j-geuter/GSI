@@ -170,7 +170,7 @@ def main():
         small_stop_ids.append(small_tokenizer.eos_token_id)
     print(f"Number of stop IDs in small model: {len(small_stop_ids)}")
 
-    check_and_resample_big_model = not args.check_and_resample_big_model
+    check_and_resample_big_model = not args.not_check_and_resample_big_model
 
     datasets = args.datasets.split(",")
     for dataset in datasets:
