@@ -98,10 +98,10 @@ def evaluate_candidates(prm_model, prompt, responses):
     scores = prm_model.score(messages, return_full_prm_result=False, step_sep="\n\n")
     return scores
 
-def constant_threshold(threshold=0.8, **kwargs):
+def constant_threshold(threshold=10.0, **kwargs):
     return threshold
 
-def constant_reward_cutoff(reward, threshold=0.8, **kwargs):
+def constant_reward_cutoff(reward, threshold=0.7, **kwargs):
     return reward >= threshold
 
 def run_reward_tilted_decoding(
