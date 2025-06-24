@@ -17,7 +17,8 @@ pip install -e .
 cd ..
 ```
 
-to install RewardHub.
+to install RewardHub. If the build fails, instead clone the [RewardHub](https://github.com/Red-Hat-AI-Innovation-Team/reward_hub) repository,
+and replace the file `reward_hub/reward_hub/vllm/reward.py` by the one in this repo, then install RewardHub as outlined above.
 
 ## Usage
 
