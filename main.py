@@ -101,8 +101,9 @@ def main():
         help="Decoding mode; `rejection-sampling` or `reward-tilted` or `reward_threshold`.",
     )
     parser.add_argument(
-        "--check-and-resample-big-model",
+        "--not-check-and-resample-big-model",
         action="store_true",
+        help="If passed, do not include the rejection step with the big model.",
     )
     parser.add_argument(
         "--tilt-only-by-big-model",
@@ -169,6 +170,8 @@ def main():
         small_stop_ids.append(small_tokenizer.eos_token_id)
     print(f"Number of stop IDs in small model: {len(small_stop_ids)}")
 
+    check_and_resample_big_model = not args.check_and_resample_big_model
+
     datasets = args.datasets.split(",")
     for dataset in datasets:
             for i in range(args.runs_per_dataset):
@@ -214,7 +217,7 @@ def main():
                             max_new_tokens=args.max_new_tokens,
                             temperature=args.temperature,
                             top_p=args.top_p,
-                            check_and_resample_big_model=args.check_and_resample_big_model,
+                            check_and_resample_big_model=check_and_resample_big_model,
                             resample_reward_threshold=args.resample_reward_threshold,
                             threshold_on_tilted=args.threshold_on_tilted,
                             system_prompt=system_prompt,
