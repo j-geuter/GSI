@@ -27,6 +27,5 @@ srun python /dir/to/main.py \
     --n_small=16 \
     --n_big=16 \
     --decoding-mode=reward-tilted \
-    --check-and-resample-big-model \
     --threshold-on-tilted \
     
