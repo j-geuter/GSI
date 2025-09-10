@@ -36,11 +36,11 @@ correctness of LLM-generated answers.
 If you find this repository helpful, please consider citing our paper.
 ```
 @inproceedings{
-geuter2025guided,
-title={Guided Speculative Inference for Efficient Test-Time Alignment of {LLM}s},
-author={Jonathan Geuter and Youssef Mroueh and David Alvarez-Melis},
-booktitle={ES-FoMo III: 3rd Workshop on Efficient Systems for Foundation Models},
-year={2025},
-url={https://openreview.net/forum?id=cRTWN5iwiy}
+  geuter2025guided,
+  title={Guided Speculative Inference for Efficient Test-Time Alignment of {LLM}s},
+  author={Jonathan Geuter and Youssef Mroueh and David Alvarez-Melis},
+  booktitle={ES-FoMo III: 3rd Workshop on Efficient Systems for Foundation Models},
+  year={2025},
+  url={https://openreview.net/forum?id=cRTWN5iwiy}
 }
 ```
