@@ -25,7 +25,7 @@ and replace the file `reward_hub/reward_hub/vllm/reward.py` by the one in this r
 You can launch a SLURM job by running `job.slurm`. This launches `main.py` which evaluates GSI on the datasets specified in the job file.
 Make sure to replace all relevant parameters in `job.slurm`.
 Then, you can run the `main.py` file
-by running the SLURM file `job.slurm`. This will start a job with 3 GPUs. Change the job file accordingly with your credentials.
+by running the SLURM file `job.slurm`. This will start a job with 3 GPUs (one each for the small, large, and reward model). Change the job file accordingly with your credentials.
 
 ## Credits
 We would like to thank Red Hat AI Innovation Team for their [RewardHub](https://github.com/Red-Hat-AI-Innovation-Team/reward_hub) repository, and
