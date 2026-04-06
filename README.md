@@ -1,8 +1,8 @@
 # Guided Speculative Inference for Efficient Test-Time Alignment of LLMs
 
-This is the code repository implementing _Guided Speculative Inference_ (GSI) from the paper
-[Guided Speculative Inference for Efficient Test-Time Alignment of LLMs](https://arxiv.org/abs/2506.04118) (J. Geuter, Y. Mroueh, D. Alvarez-Melis, 2025).
-GSI is an inference-time algorithm for LLMs which combines soft best-of-n sampling with speculative sampling from a small model,
+This is the code repository implementing _Guided Speculative Inference_ (GSI) from the ICLR 2026 paper
+[Guided Speculative Inference for Efficient Test-Time Alignment of LLMs](https://arxiv.org/abs/2506.04118).
+GSI is an inference-time algorithm for LLMs that combines soft best-of-n sampling with speculative sampling from a small model,
 and allows for efficient test-time scaling of LLM reasoning models.
 
 ## Installation
@@ -18,11 +18,11 @@ cd ..
 ```
 
 to install RewardHub. If the build fails, instead clone the [RewardHub](https://github.com/Red-Hat-AI-Innovation-Team/reward_hub) repository,
-and replace the file `reward_hub/reward_hub/vllm/reward.py` by the one in this repo, then install RewardHub as outlined above.
+and replace the file `reward_hub/reward_hub/vllm/reward.py` with the one in this repo, then install RewardHub as outlined above.
 
 ## Usage
 
-You can launch a SLURM job by running `job.slurm`. This launches `main.py` which evaluates GSI on the datasets specified in the job file.
+You can launch a SLURM job by running `job.slurm`. This launches `main.py`, which evaluates GSI on the datasets specified in the job file.
 Make sure to replace all relevant parameters in `job.slurm`.
 Then, you can run the `main.py` file
 by running the SLURM file `job.slurm`. This will start a job with 3 GPUs (one each for the small, large, and reward model). Change the job file accordingly with your credentials.
@@ -36,11 +36,13 @@ correctness of LLM-generated answers.
 If you find this repository helpful, please consider citing our paper.
 ```
 @inproceedings{
-  geuter2025guided,
+  @inproceedings{
+  geuter2026guided,
   title={Guided Speculative Inference for Efficient Test-Time Alignment of {LLM}s},
   author={Jonathan Geuter and Youssef Mroueh and David Alvarez-Melis},
-  booktitle={ES-FoMo III: 3rd Workshop on Efficient Systems for Foundation Models},
-  year={2025},
-  url={https://openreview.net/forum?id=cRTWN5iwiy}
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026},
+  url={https://openreview.net/forum?id=miNzDqDENd}
+  }
 }
 ```
