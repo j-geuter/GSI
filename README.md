@@ -5,6 +5,8 @@ This is the code repository implementing _Guided Speculative Inference_ (GSI) fr
 GSI is an inference-time algorithm for LLMs that combines soft best-of-n sampling with speculative sampling from a small model,
 and allows for efficient test-time scaling of LLM reasoning models.
 
+Note: the code in this repository is outdated (corresponding to an earlier version of the paper); we will try to update it soon!
+
 ## Installation
 To run the code, you need to install the `requirements.txt`.
 Our models are implemented with vLLM using Red Hat AI Innovation Team's [RewardHub](https://github.com/Red-Hat-AI-Innovation-Team/reward_hub).
